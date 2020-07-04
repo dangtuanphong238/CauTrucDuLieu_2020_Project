@@ -12,6 +12,7 @@ D:\QuanLyThuVien_Project2020\QuanLyThuVien_Project2020\bin\Debug\QuanLyThuVien_P
 D:\QuanLyThuVien_Project2020\QuanLyThuVien_Project2020\obj\Debug\QuanLyThuVien_Project2020.csproj.CoreCompileInputs.cache
 D:\QuanLyThuVien_Project2020\QuanLyThuVien_Project2020\obj\Debug\QuanLyThuVien_Project2020.exe
 D:\QuanLyThuVien_Project2020\QuanLyThuVien_Project2020\obj\Debug\QuanLyThuVien_Project2020.pdb
+<<<<<<< HEAD
 C:\Users\PC\Desktop\CauTrucDuLieu_2020_Project\QuanLyThuVien_Project2020\bin\Debug\Admin.txt
 C:\Users\PC\Desktop\CauTrucDuLieu_2020_Project\QuanLyThuVien_Project2020\bin\Debug\Sach.txt
 C:\Users\PC\Desktop\CauTrucDuLieu_2020_Project\QuanLyThuVien_Project2020\bin\Debug\QuanLyThuVien_Project2020.exe
@@ -20,3 +21,13 @@ C:\Users\PC\Desktop\CauTrucDuLieu_2020_Project\QuanLyThuVien_Project2020\obj\Deb
 C:\Users\PC\Desktop\CauTrucDuLieu_2020_Project\QuanLyThuVien_Project2020\obj\Debug\QuanLyThuVien_Project2020.exe
 C:\Users\PC\Desktop\CauTrucDuLieu_2020_Project\QuanLyThuVien_Project2020\obj\Debug\QuanLyThuVien_Project2020.pdb
 C:\Users\PC\Desktop\CauTrucDuLieu_2020_Project\QuanLyThuVien_Project2020\obj\Debug\QuanLyThuVien_Project2020.csprojAssemblyReference.cache
+=======
+C:\Users\sochu\Desktop\CauTrucDuLieu_2020_Project\QuanLyThuVien_Project2020\bin\Debug\Admin.txt
+C:\Users\sochu\Desktop\CauTrucDuLieu_2020_Project\QuanLyThuVien_Project2020\bin\Debug\Sach.txt
+C:\Users\sochu\Desktop\CauTrucDuLieu_2020_Project\QuanLyThuVien_Project2020\bin\Debug\QuanLyThuVien_Project2020.exe
+C:\Users\sochu\Desktop\CauTrucDuLieu_2020_Project\QuanLyThuVien_Project2020\bin\Debug\QuanLyThuVien_Project2020.pdb
+C:\Users\sochu\Desktop\CauTrucDuLieu_2020_Project\QuanLyThuVien_Project2020\obj\Debug\QuanLyThuVien_Project2020.csproj.CoreCompileInputs.cache
+C:\Users\sochu\Desktop\CauTrucDuLieu_2020_Project\QuanLyThuVien_Project2020\obj\Debug\QuanLyThuVien_Project2020.exe
+C:\Users\sochu\Desktop\CauTrucDuLieu_2020_Project\QuanLyThuVien_Project2020\obj\Debug\QuanLyThuVien_Project2020.pdb
+C:\Users\sochu\Desktop\CauTrucDuLieu_2020_Project\QuanLyThuVien_Project2020\obj\Debug\QuanLyThuVien_Project2020.csprojAssemblyReference.cache
+>>>>>>> PhongNha

@@ -1,8 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.Odbc;
 using System.IO;
 using System.Linq;
 using System.Text;
+
+using System.Security.Cryptography;
 
 namespace QuanLyThuVien_Project2020
 {
@@ -51,7 +54,7 @@ namespace QuanLyThuVien_Project2020
             if(Login(nhanVien) == true)
             {
                 Console.Clear();
-                Console.WriteLine("Login Completed");
+                Console.WriteLine("\t\t_-_-_Login Completed_-_-_");
                 Selection();
             }
 
@@ -60,15 +63,36 @@ namespace QuanLyThuVien_Project2020
 
         public static bool Login(NhanVien[] nhanVien)
         {
-            Console.WriteLine("\t\t\t**********Login**********");
+            Console.ForegroundColor = ConsoleColor.Blue;
+            Console.WriteLine("\t\t\t************************************");
+            Console.Write("\t\t\t*");
+            Console.ForegroundColor = ConsoleColor.Red;
+            Console.Write("\t\tLogin");
+            Console.ForegroundColor = ConsoleColor.Blue;
+            Console.WriteLine("\t\t   *");
+            Console.WriteLine("\t\t\t************************************");
             int num = 0;
             do
             {
-                Console.Write("Nhap vao username: ");
+                Console.ForegroundColor = ConsoleColor.Green;
+                Console.Write("\t\tNhap vao username: ");
+                Console.ResetColor();
                 string sUser = Console.ReadLine();
-                Console.Write("Nhap vao password: ");
+
+                Console.ForegroundColor = ConsoleColor.Green;
+                Console.Write("\t\tNhap vao password: ");
+                Console.ResetColor();
+
+
                 string sPass = Console.ReadLine();
+               
+               
                 
+
+
+
+
+
                 foreach (NhanVien i in nhanVien)
                 {
                     if (String.Compare(sUser, i.sUser) == 0 && String.Compare(sPass, i.sPass) == 0)
@@ -85,11 +109,18 @@ namespace QuanLyThuVien_Project2020
                 num++;
                 if(num == 3)
                 {
+<<<<<<< HEAD
                     Environment.Exit(0);
+=======
+                    Console.ForegroundColor = ConsoleColor.Red;
+                    Console.WriteLine("\n\t!!! Login failed !!! \n");
+                    Console.ResetColor();
+>>>>>>> PhongNha
                 }
             } while (num < 3);
             return false;
         }
+       
         public static void Selection()
         {
            Sach[] sach = new Sach[0];
@@ -97,20 +128,44 @@ namespace QuanLyThuVien_Project2020
             int selection;
             do
             {
-                Console.WriteLine("_____Please make a selection_____");
-                Console.WriteLine("1/ Quan ly sach");
-                Console.WriteLine("2/ Quan ly phieu muon");
-                Console.Write("Your selection: ");
+                Console.ForegroundColor = ConsoleColor.Yellow;
+                Console.WriteLine("\t\t\t***********************************");
+                Console.Write("\t\t\t*");
+                Console.ForegroundColor = ConsoleColor.Green;
+                Console.Write("_____Please make a selection_____");
+                Console.ForegroundColor = ConsoleColor.Yellow;
+                Console.WriteLine("*");
+                Console.ForegroundColor = ConsoleColor.Yellow;
+                Console.WriteLine("\t\t\t***********************************");
+                Console.ResetColor();
+                Console.ForegroundColor = ConsoleColor.DarkMagenta;
+                Console.WriteLine("\t\t1/ Quan ly sach");
+                Console.WriteLine("\t\t2/ Quan ly phieu muon"); 
+                Console.ForegroundColor = ConsoleColor.DarkBlue;
+                Console.Write("\t\t\tYour selection: ");
+                Console.ResetColor();
                 int.TryParse(Console.ReadLine(), out selection);
                 Console.Clear();
                 switch (selection)
                 {
                     case 1:
-                        Console.WriteLine("_____Please make a selection_____");
-                        Console.WriteLine("1/ Hien thi tat ca sach");
-                        Console.WriteLine("2/ Them sach");
-                        Console.WriteLine("3/ Xoa sach");
-                        Console.Write("Your selection: ");
+                        Console.ForegroundColor = ConsoleColor.Yellow;
+                        Console.WriteLine("\t\t\t***********************************");
+                        Console.Write("\t\t\t*");
+                        Console.ForegroundColor = ConsoleColor.Green;
+                        Console.Write("_____Please make a selection_____");
+                        Console.ForegroundColor = ConsoleColor.Yellow;
+                        Console.WriteLine("*");
+                        Console.ForegroundColor = ConsoleColor.Yellow;
+                        Console.WriteLine("\t\t\t***********************************");
+                        Console.ResetColor();
+                        Console.ForegroundColor = ConsoleColor.DarkCyan;
+                        Console.WriteLine("\t\t1/ Hien thi tat ca sach");
+                        Console.WriteLine("\t\t2/ Them sach");
+                        Console.WriteLine("\t\t3/ Xoa sach");
+                        Console.ForegroundColor = ConsoleColor.DarkRed;
+                        Console.Write("\t\t\tYour selection: ");
+                        Console.ResetColor();
                         int.TryParse(Console.ReadLine(), out selection);
                         Console.Clear();
                         switch(selection)
@@ -189,7 +244,17 @@ namespace QuanLyThuVien_Project2020
         }    
         static void XuatSach(Sach[] arrA)
         {
-            Console.WriteLine("\t\t\t----------Xuat Sach----------");
+            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.WriteLine("\t\t\t*****************************************");
+            Console.Write("\t\t\t*");
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.Write("\t   ___-___Xuat Sach___-___");
+            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.WriteLine("\t\t*");
+            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.WriteLine("\t\t\t*****************************************");
+            Console.ResetColor();
+            Console.WriteLine("\t\t\t--------------------");
             for (int i = 0; i < arrA.Length; i++)
             {
                 Console.WriteLine("Sach thu {0}", i + 1);
