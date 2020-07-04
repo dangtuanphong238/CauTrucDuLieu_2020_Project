@@ -1,0 +1,14 @@
+I:\QuanLyThuVien_Project2020\QuanLyThuVien_Project2020\obj\Debug\QuanLyThuVien_Project2020.exe
+I:\QuanLyThuVien_Project2020\QuanLyThuVien_Project2020\obj\Debug\QuanLyThuVien_Project2020.pdb
+I:\QuanLyThuVien_Project2020\QuanLyThuVien_Project2020\bin\Debug\Admin.txt
+I:\QuanLyThuVien_Project2020\QuanLyThuVien_Project2020\bin\Debug\Sach.txt
+I:\QuanLyThuVien_Project2020\QuanLyThuVien_Project2020\bin\Debug\QuanLyThuVien_Project2020.exe
+I:\QuanLyThuVien_Project2020\QuanLyThuVien_Project2020\bin\Debug\QuanLyThuVien_Project2020.pdb
+I:\QuanLyThuVien_Project2020\QuanLyThuVien_Project2020\obj\Debug\QuanLyThuVien_Project2020.csprojResolveAssemblyReference.cache
+D:\QuanLyThuVien_Project2020\QuanLyThuVien_Project2020\bin\Debug\Admin.txt
+D:\QuanLyThuVien_Project2020\QuanLyThuVien_Project2020\bin\Debug\Sach.txt
+D:\QuanLyThuVien_Project2020\QuanLyThuVien_Project2020\bin\Debug\QuanLyThuVien_Project2020.exe
+D:\QuanLyThuVien_Project2020\QuanLyThuVien_Project2020\bin\Debug\QuanLyThuVien_Project2020.pdb
+D:\QuanLyThuVien_Project2020\QuanLyThuVien_Project2020\obj\Debug\QuanLyThuVien_Project2020.csproj.CoreCompileInputs.cache
+D:\QuanLyThuVien_Project2020\QuanLyThuVien_Project2020\obj\Debug\QuanLyThuVien_Project2020.exe
+D:\QuanLyThuVien_Project2020\QuanLyThuVien_Project2020\obj\Debug\QuanLyThuVien_Project2020.pdb
