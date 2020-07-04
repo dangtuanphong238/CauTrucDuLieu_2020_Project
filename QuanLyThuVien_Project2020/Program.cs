@@ -73,16 +73,21 @@ namespace QuanLyThuVien_Project2020
                 {
                     if (String.Compare(sUser, i.sUser) == 0 && String.Compare(sPass, i.sPass) == 0)
                     {
-                        num++;
-                        //Menu();
+                        //num++;
                         return true;
                     }
+                    else
+                    {
+                        Console.Clear();
+                        Console.WriteLine("Login lan {0}", num + 2);
+                    }
                 }
-                if (num == 0)
+                num++;
+                if(num == 3)
                 {
-                    Console.WriteLine("Login failed");
+                    Environment.Exit(0);
                 }
-            } while (num == 0);
+            } while (num < 3);
             return false;
         }
         public static void Selection()
@@ -114,7 +119,7 @@ namespace QuanLyThuVien_Project2020
                                 XuatSach(sach);
                                 break;
                             case 2:
-                                GhiSach(ref sach);
+                                ThemSach();
                                 break;
                             case 3:
                                 Console.Write("Nhap vao ma sach can xoa: ");
@@ -122,7 +127,7 @@ namespace QuanLyThuVien_Project2020
                                 XoaSach(ref sach, sMa);
                                 XuatSach(sach);
                                 //ghi sach chua dc
-                                //GhiSach(ref sach);
+                                //ThemSach();
                                 break;
                             default:
                                 break;
@@ -188,15 +193,16 @@ namespace QuanLyThuVien_Project2020
             for (int i = 0; i < arrA.Length; i++)
             {
                 Console.WriteLine("Sach thu {0}", i + 1);
-                Console.WriteLine("Ma nhan vien: {0}", arrA[i].sMaSach);
-                Console.WriteLine("Ho ten nhan vien: {0}", arrA[i].sTenSach);
-                Console.WriteLine("Ho ten nhan vien: {0}", arrA[i].sTacGia);
-                Console.WriteLine("Ho ten nhan vien: {0}", arrA[i].sNhaXB);
-                Console.WriteLine("Ho ten nhan vien: {0}", arrA[i].iGiaBan);
-                Console.WriteLine("Ho ten nhan vien: {0}", arrA[i].iNamPhatHanh);
-                Console.WriteLine("Ho ten nhan vien: {0}", arrA[i].iSoTrang);
-                Console.WriteLine("Ho ten nhan vien: {0}", arrA[i].dtNgayNhapKho);
-                Console.WriteLine("Ho ten nhan vien: {0}", arrA[i].iTinhTrang);
+                Console.WriteLine("Ma sach: {0}", arrA[i].sMaSach);
+                Console.WriteLine("Ten sach: {0}", arrA[i].sTenSach);
+                Console.WriteLine("Tac gia: {0}", arrA[i].sTacGia);
+                Console.WriteLine("Nha xuat ban: {0}", arrA[i].sNhaXB);
+                Console.WriteLine("Gia: {0}", arrA[i].iGiaBan);
+                Console.WriteLine("Nam phat hanh: {0}", arrA[i].iNamPhatHanh);
+                Console.WriteLine("So trang: {0}", arrA[i].iSoTrang);
+                Console.WriteLine("Ngay nhap kho: {0}", arrA[i].dtNgayNhapKho);
+                Console.WriteLine("Tinh trang: {0}", arrA[i].iTinhTrang);
+                Console.WriteLine();
             }
             Console.WriteLine("\t\t\t---------------------------------");
         }
@@ -225,17 +231,45 @@ namespace QuanLyThuVien_Project2020
                 }
             }
         }
-        static void GhiSach(ref Sach[] arrA)
+        static void ThemSach()
         {
-            string[] names = new string[] { "Tran Van A"};
-            using (StreamWriter sw = new StreamWriter("Sach.txt"))
+            FileStream stream = new FileStream("C:\\Users\\PC\\Desktop\\CauTrucDuLieu_2020_Project\\QuanLyThuVien_Project2020\\Sach.txt", FileMode.Append);
+            using (StreamWriter writer = new StreamWriter(stream, Encoding.UTF8))
             {
-
-                foreach (string s in names)
+                Console.Write("Nhap vao ma sach: ");
+                string sMa = Console.ReadLine();
+                Console.Write("Nhap vao ten sach: ");
+                string sTen = Console.ReadLine();
+                Console.Write("Nhap vao ten tac gia: ");
+                string sTenTG = Console.ReadLine();
+                Console.Write("Nhap vao nha xuat ban: ");
+                string sNhaXB = Console.ReadLine();
+                Console.Write("Nhap vao gia ban: ");
+                int iGiaBan = int.Parse(Console.ReadLine());
+                int iNamPhatHanh = 0;
+                do
                 {
-                    sw.WriteLine(s);
-                }
+                    Console.Write("Nhap vao nam phat hanh: ");
+                    iNamPhatHanh = int.Parse(Console.ReadLine());
+                } while (iNamPhatHanh > DateTime.Now.Year);
+
+                Console.Write("Nhap vao so trang: ");
+                int iTrang = int.Parse(Console.ReadLine());
+
+                int iTinhTrang = 0;
+                do
+                {
+                    Console.Write("Nhap vao tinh trang: ");
+                    iTinhTrang = int.Parse(Console.ReadLine());
+
+                } while (iTinhTrang > 1 && iTinhTrang < 0);
+
+                writer.WriteLine("{0}#{1}#{2}#{3}#{4}#{5}#{6}#{7}#{8}", sMa, sTen, sTenTG, sNhaXB, iGiaBan, iNamPhatHanh, iTrang, DateTime.Today, iTinhTrang);
             }
+        }
+        static void UpdateFile()
+        {
+            
         }
     }
 }
