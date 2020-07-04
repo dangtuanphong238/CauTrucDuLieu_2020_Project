@@ -1,7 +1,10 @@
-﻿6
-Sach01#Dac nhan tam#Dale Carnegie#NXB Kim Dong#99000#2007#250#20/06/2020#0
-Sach02#Nha gia kim#Paulo Coelho#NXB Thanh Nien#90000#2005#200#20/06/2020#0
-Sach03#Tren duong bang#Tony Buoi Sang#NXB Tuoi Tre#72000#2009#300#20/06/2020#0
-Sach04#Ca phe cung tony#Tony Buoi Sang#NXB Sai Gon#85000#2012#150#20/06/2020#0
-Sach05#Tuoi tre dang gia bao nhieu#Rosie Nguyễn#NXB Kim Dong#70000#2017#270#20/06/2020#0
-Sach06#Tuoi tre dang gia bao nhieu#Rosie Nguyễn#NXB Kim Dong#70000#2017#270#20/06/2020#0
+﻿8
+Sach01#Dac nhan tam#Dale Carnegie#NXB Kim Dong#99000#2007#250#20/06/2020 12:00:00 AM#0
+Sach02#Nha gia kim#Paulo Coelho#NXB Thanh Nien#90000#2005#200#20/06/2020 12:00:00 AM#0
+Sach03#Tren duong bang#Tony Buoi Sang#NXB Tuoi Tre#72000#2009#300#20/06/2020 12:00:00 AM#0
+Sach04#Ca phe cung tony#Tony Buoi Sang#NXB Sai Gon#85000#2012#150#20/06/2020 12:00:00 AM#0
+Sach05#Tuoi tre dang gia bao nhieu#Rosie Nguyễn#NXB Kim Dong#70000#2017#270#20/06/2020 12:05:00 AM#0
+Sach06#Tuoi tre dang gia bao nhieu#Rosie Nguyễn#NXB Kim Dong#70000#2017#270#20/06/2020 12:00:00 AM#0
+abc#abc#abc#abc#20000#2005#140#7/4/2020 12:00:00 AM#0
+add#adad#ada#ada#15555#2000#1555#7/4/2020 12:00:00 AM#0
+ab#ab#ab#ab#2#2000#120#7/4/2020 12:00:00 AM#0
