@@ -54,7 +54,7 @@ namespace QuanLyThuVien_Project2020
             if(Login(nhanVien) == true)
             {
                 Console.Clear();
-                Console.WriteLine("\t\t_-_-_Login Completed_-_-_");
+                Console.WriteLine("\t\t\t\t_-_-_Login Completed_-_-_");
                 Selection();
             }
 
@@ -85,13 +85,6 @@ namespace QuanLyThuVien_Project2020
 
 
                 string sPass = Console.ReadLine();
-               
-               
-                
-
-
-
-
 
                 foreach (NhanVien i in nhanVien)
                 {
@@ -109,13 +102,10 @@ namespace QuanLyThuVien_Project2020
                 num++;
                 if(num == 3)
                 {
-<<<<<<< HEAD
                     Environment.Exit(0);
-=======
                     Console.ForegroundColor = ConsoleColor.Red;
                     Console.WriteLine("\n\t!!! Login failed !!! \n");
                     Console.ResetColor();
->>>>>>> PhongNha
                 }
             } while (num < 3);
             return false;
