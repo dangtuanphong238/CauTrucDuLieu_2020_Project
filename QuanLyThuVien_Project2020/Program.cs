@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Security.Cryptography;
 using System.Text;
 
 namespace QuanLyThuVien_Project2020
@@ -68,23 +69,26 @@ namespace QuanLyThuVien_Project2020
                 string sUser = Console.ReadLine();
                 Console.Write("Nhap vao password: ");
                 string sPass = Console.ReadLine();
-                
+               
                 foreach (NhanVien i in nhanVien)
                 {
                     if (String.Compare(sUser, i.sUser) == 0 && String.Compare(sPass, i.sPass) == 0)
-                    {
-                        num++;
+                    {             
                         //Menu();
                         return true;
                     }
                 }
                 if (num == 0)
                 {
+                   
                     Console.WriteLine("Login failed");
+                    num++;
                 }
+              
             } while (num == 0);
             return false;
         }
+       
         public static void Selection()
         {
            Sach[] sach = new Sach[0];
@@ -236,6 +240,56 @@ namespace QuanLyThuVien_Project2020
                     sw.WriteLine(s);
                 }
             }
+        }
+        //doc phieu muon
+        static void DocPhieuMuon(ref PhieuMuon[] arrA)
+        {
+            int iN = 0;
+            using (StreamReader sR = new StreamReader("PhieuMuon.txt"))
+            {
+                int.TryParse(sR.ReadLine(), out iN);
+                arrA = new PhieuMuon[iN];
+                for (int i = 0; i < iN; i++)
+                {
+                    string sLine = sR.ReadLine();
+                    string[] separator = new string[] { "#" };
+                    string[] arrCon = sLine.Split(separator, StringSplitOptions.RemoveEmptyEntries);
+                    int.TryParse(arrCon[0], out arrA[i].iSoPhieuMuon);
+                    arrA[i].sMaBanDoc = arrCon[1];
+                    arrA[i].sMaSach = arrCon[2];
+                    DateTime.TryParse(arrCon[3], out arrA[i].dtNgayMuon);
+                    DateTime.TryParse(arrCon[4], out arrA[i].dtNgayTra);
+                    int.TryParse(arrCon[5], out arrA[i].iTinhTrang);
+                }
+            }
+        }
+        //xuat phieu muon
+        static void XuatPhieuMuon(PhieuMuon[] arrA)
+        {
+            Console.WriteLine("\t\t\t----------Xuat Sach----------");
+            for (int i = 0; i < arrA.Length; i++)
+            {
+                Console.WriteLine("********************************");
+                Console.WriteLine("Phieu muon thu {0}", i + 1);
+                Console.WriteLine("So phieu muon : {0}", arrA[i].iSoPhieuMuon);
+                Console.WriteLine("Ma ban doc: {0}", arrA[i].sMaBanDoc);
+                Console.WriteLine("Ma sach : {0}", arrA[i].sMaSach);
+                Console.WriteLine("Ngay muon : {0}", arrA[i].dtNgayMuon);
+                Console.WriteLine("Ngay tra: {0}", arrA[i].dtNgayTra);
+                Console.WriteLine("Tinh trang phieu muon : {0}", arrA[i].iTinhTrang);
+            }
+            Console.WriteLine("\t\t\t---------------------------------");
+        }
+        static void MuonSach(PhieuMuon[] arrA)
+        {
+            Console.Write("Nhap vao ma sach can muon : ");
+            string sMaSachMuon = Console.ReadLine();
+            Console.Write("Nhap vao ma ban doc : ");
+            string sMaBanDocMuon = Console.ReadLine();
+            PhieuMuon[] phieuMuons = new PhieuMuon[0];
+            DocPhieuMuon(ref phieuMuons);
+            
+            
         }
     }
 }

@@ -5,4 +5,3 @@ Sach03#Tren duong bang#Tony Buoi Sang#NXB Tuoi Tre#72000#2009#300#20/06/2020#0
 Sach04#Ca phe cung tony#Tony Buoi Sang#NXB Sai Gon#85000#2012#150#20/06/2020#0
 Sach05#Tuoi tre dang gia bao nhieu#Rosie Nguyễn#NXB Kim Dong#70000#2017#270#20/06/2020#0
 Sach06#Tuoi tre dang gia bao nhieu#Rosie Nguyễn#NXB Kim Dong#70000#2017#270#20/06/2020#0
-Sach06#Tuoi tre dang gia bao nhieu#Rosie Nguyễn#NXB Kim Dong#70000#2017#270#20/06/2020#0
